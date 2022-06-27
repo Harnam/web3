@@ -1,1 +1,11 @@
-Hello World!
+<app-header class="header"></app-header>
+<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
+  <div class="section" style="background-color: aqua;">Some section1</div>
+	<div class="section" style="background-color: deeppink;" (click)="fullpage_api.moveSectionDown()">Some section2</div>
+	<div class="section" style="background-color: orangered">
+		<div class="slide">Slide 2.1</div>
+		<div class="slide">Slide 2.2</div>
+		<div class="slide">Slide 2.3</div>
+	</div>
+	<div class="section" style="background-color: springgreen;" (click)="fullpage_api.moveTo('secondPage', 2)">Some section4</div>
+</div>
