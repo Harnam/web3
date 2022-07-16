@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.sect{
+    position: absolute;
+    min-width: 100%;
+    min-height: calc(100% - 50px);
+}
+body{
+    margin: 0;
+}
